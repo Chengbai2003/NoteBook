@@ -8,7 +8,7 @@ module.exports = app => {
   router.post('/api/user/register', controller.user.register);
   router.post('/api/user/login', controller.user.login);
   router.get('/api/user/get_userinfo', _jwt, controller.user.getUserInfo); // 获取用户信息
-  router.post('/api/user/updateUserInfo', _jwt, controller.user.updateUserInfo); // 修改个性签名
+  router.post('/api/user/update_userInfo', _jwt, controller.user.updateUserInfo); // 修改个性签名
   router.post('/api/user/modify_pass', _jwt, controller.user.modifyPass); // 修改用户密码
   router.post('/api/upload', controller.upload.upload); // 上传图片
 
